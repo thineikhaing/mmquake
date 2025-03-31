@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 interface Communities {
   Name: string;
   Type: string;
-  address: string;
+  Address: string;
   City: string;
   Region: string;
   Contact: string;

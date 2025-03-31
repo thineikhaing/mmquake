@@ -1,11 +1,9 @@
 // src/components/Dashboard/InfoGrid.tsx
-import React from 'react';
+import React, { JSX } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  Users,
   Shield,
   HandHelping,
-  HeartHandshake,
   BatteryCharging,
 } from 'lucide-react';
 

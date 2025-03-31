@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import CountUp from 'react-countup';
 import { AlertTriangle, HeartPulse, Search } from 'lucide-react'; // Icons
 

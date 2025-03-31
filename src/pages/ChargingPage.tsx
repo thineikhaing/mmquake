@@ -4,11 +4,11 @@ import Papa from 'papaparse';
 import { useNavigate } from 'react-router-dom';
 
 interface Charging {
+  Name: string;
+  Type: string;
+  Address: string;
+  City: string;
   Region: string;
-  Organization: string;
-  Contact: string;
-  Position: string;
-  Location: string;
 }
 
 const ChargingPage: React.FC = () => {
@@ -61,11 +61,11 @@ const ChargingPage: React.FC = () => {
             {currentData.map((team, index) => (
               <tr key={index} className="border-t hover:bg-gray-50">
                 <td className="px-3 py-2">{indexOfFirst + index + 1}</td>
-                <td className="px-3 py-2">{team.name}</td>
-                <td className="px-3 py-2">{team.type}</td>
-                <td className="px-3 py-2">{team.address}</td>
-                <td className="px-3 py-2">{team.city}</td>
-                <td className="px-3 py-2">{team.region}</td>
+                <td className="px-3 py-2">{team.Name}</td>
+                <td className="px-3 py-2">{team.Type}</td>
+                <td className="px-3 py-2">{team.Address}</td>
+                <td className="px-3 py-2">{team.City}</td>
+                <td className="px-3 py-2">{team.Region}</td>
               </tr>
             ))}
           </tbody>
