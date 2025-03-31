@@ -18,7 +18,7 @@ const RescueTeamsPage: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/rescue_teams.csv')
+    fetch('/data/rescue_teams.csv')
       .then((res) => res.text())
       .then((text) => {
         Papa.parse<RescueTeam>(text, {

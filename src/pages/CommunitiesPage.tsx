@@ -19,7 +19,7 @@ const CommunitiesPage: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/communities.csv')
+    fetch('/data/communities.csv')
       .then((res) => res.text())
       .then((text) => {
         Papa.parse<Communities>(text, {

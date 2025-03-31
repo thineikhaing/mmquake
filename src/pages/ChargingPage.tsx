@@ -18,7 +18,7 @@ const ChargingPage: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/charging.csv')
+    fetch('/data/charging.csv')
       .then((res) => res.text())
       .then((text) => {
         Papa.parse<Charging>(text, {
