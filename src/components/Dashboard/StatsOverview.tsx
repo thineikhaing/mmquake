@@ -31,20 +31,19 @@ const stats: Stat[] = [
 ];
 
 const StatsOverview: React.FC = () => (
-  <div className="text-center mb-8">
-    
+  <div className="text-center mt-2">
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
       {stats.map((stat) => (
         <div
           key={stat.title}
-          className={`rounded-2xl p-6 text-white flex flex-col items-center justify-center shadow-lg ${stat.color}`}
+          className={`rounded-2xl p-3 text-white flex flex-col items-center justify-center shadow-lg ${stat.color}`}
         >
           <div className="flex items-center gap-2">
             <span className={`${stat.color}`}>{stat.icon}</span>
-            <h3 className="text-base font-semibold">{stat.title}</h3>
+            <h4 className="text-base font-semibold">{stat.title}</h4>
           </div>
 
-          <p className="text-4xl font-bold">
+          <p className="text-3xl font-bold">
             <CountUp end={stat.value} duration={2} separator="," />
           </p>
         </div>
