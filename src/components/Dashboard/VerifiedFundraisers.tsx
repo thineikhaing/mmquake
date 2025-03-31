@@ -21,7 +21,7 @@ const fundraisers: Fundraiser[] = [
     region: "Myanmar",
     flag: "🇲🇲",
     goal: 12500,
-    raised: 10170,
+    raised: 11915,
     image: "/images/fundraisers/mer.png",
   },
   {
@@ -32,7 +32,7 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 31111,
+    raised: 55630,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -42,7 +42,7 @@ const fundraisers: Fundraiser[] = [
     region: "Global",
     flag: "🌐",
     goal: 150000000,
-    raised: 670996733,
+    raised: 813025004,
     image: "/images/fundraisers/spring-rev.png",
   },
   {
@@ -52,7 +52,7 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 114028,
+    raised: 125402,
     image: "/images/fundraisers/gofundme.png",
   },
 ];

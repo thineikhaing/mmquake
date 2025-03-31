@@ -12,13 +12,7 @@ interface InfoCard {
 }
 
 const cards: InfoCard[] = [
-  // {
-  //   type: 'missing',
-  //   title: 'Missing Persons',
-  //   icon: <Users size={28} />,
-  //   description: 'Reported missing individuals in affected areas.',
-  //   route: '/missing-persons',
-  // },
+
   {
     type: "rescue",
     title: "Rescue Teams",

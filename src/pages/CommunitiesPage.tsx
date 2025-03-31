@@ -1,7 +1,6 @@
 // src/pages/RescueTeamsPage.tsx
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
-import { useNavigate } from 'react-router-dom';
 
 interface Communities {
   Name: string;
@@ -16,7 +15,6 @@ const CommunitiesPage: React.FC = () => {
   const [data, setData] = useState<Communities[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const perPage = 10;
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data/communities.csv')
@@ -36,13 +34,6 @@ const CommunitiesPage: React.FC = () => {
 
   return (
     <div className="p-6 space-y-6">
-      {/* Back to Dashboard */}
-      <button
-        onClick={() => navigate('/')}
-        className="text-blue-600 underline text-sm"
-      >
-        ← Back to Dashboard
-      </button>
 
       <h1 className="text-2xl font-bold">Rescue Teams Directory</h1>
 

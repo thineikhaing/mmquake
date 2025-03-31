@@ -6,7 +6,7 @@ A Progressive Web App built to provide **real-time earthquake updates**, verifie
 
 ## 🚀 Live App
 
-👉 [Access the Live App](https://mmquake.app)
+👉 [Access the Live App](https://mmquake.netlify.app/)
 
 ---
 
