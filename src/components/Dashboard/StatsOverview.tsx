@@ -12,19 +12,19 @@ interface Stat {
 const stats: Stat[] = [
   {
     title: 'Deaths',
-    value: 2928,
+    value: 3034,
     color: 'bg-red-600',
     icon: <AlertTriangle size={28} />,
   },
   {
     title: 'Injuries',
-    value: 3408,
+    value: 3517,
     color: 'bg-yellow-500',
     icon: <HeartPulse size={28} />,
   },
   {
     title: 'Missing',
-    value: 360,
+    value: 498,
     color: 'bg-blue-500',
     icon: <Search size={28} />,
   },
