@@ -20,8 +20,8 @@ const fundraisers: Fundraiser[] = [
     link: "https://www.giving.sg/donate/campaign/lions-hands-to-chinthe-myanmar-earthquake-relief-",
     region: "Singapore",
     flag: "🇸🇬",
-    goal: 25674,
-    raised: 10000,
+    goal: 10000,
+    raised: 31111,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -30,8 +30,8 @@ const fundraisers: Fundraiser[] = [
     link: "https://springcrowdfund.org/campaign/2a026f8a-6799-4a46-9fb6-b6f4526cfa4a",
     region: "Global",
     flag: "🌐",
-    goal: 656807034,
-    raised: 150000000,
+    goal: 150000000,
+    raised: 670996733,
     image: "/images/fundraisers/spring-rev.png",
   },
   {
@@ -41,7 +41,7 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 113764,
+    raised: 114028,
     image: "/images/fundraisers/gofundme.png",
   },
 ];
