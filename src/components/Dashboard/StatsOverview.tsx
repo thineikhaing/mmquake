@@ -39,8 +39,11 @@ const StatsOverview: React.FC = () => (
           key={stat.title}
           className={`rounded-2xl p-6 text-white flex flex-col items-center justify-center shadow-lg ${stat.color}`}
         >
-          <div className="mb-2">{stat.icon}</div>
-          <h3 className="text-base font-medium">{stat.title}</h3>
+          <div className="flex items-center gap-2">
+            <span className={`${stat.color}`}>{stat.icon}</span>
+            <h3 className="text-base font-semibold">{stat.title}</h3>
+          </div>
+
           <p className="text-4xl font-bold">
             <CountUp end={stat.value} duration={2} separator="," />
           </p>

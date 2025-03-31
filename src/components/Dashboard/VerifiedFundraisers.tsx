@@ -14,6 +14,17 @@ interface Fundraiser {
 
 const fundraisers: Fundraiser[] = [
   {
+    name: "Myanmar Earthquake Relief",
+    description:
+      "This website is a community effort set up by Myanmar volunteers based abroad to support the relief effort.",
+    link: "https://www.myanmarearthquakehelp.com/en/donate",
+    region: "Myanmar",
+    flag: "🇲🇲",
+    goal: 12500,
+    raised: 10170,
+    image: "/images/fundraisers/mer.png",
+  },
+  {
     name: "Lions Hands to Chinthe (Singapore)",
     description:
       "Giving.sg fundraiser supporting earthquake relief from Singapore.",
