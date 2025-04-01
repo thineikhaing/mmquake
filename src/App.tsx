@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import {useState } from "react";
 import { registerSW } from "virtual:pwa-register";
 import UpdatePrompt from "./components/UpdatePrompt";
+import ScrollToTop from './components/ScrollToTop';
 import "./App.css";
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
   });
   return (
     <>
+      <ScrollToTop />
       <Header/>
-      <div className="space-y-8 p-6 bg-gray-50 min-h-screen">
+      <div className="space-y-2 p-6 bg-gray-50 min-h-screen">
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/rescue-teams" element={<RescueTeamsPage />} />

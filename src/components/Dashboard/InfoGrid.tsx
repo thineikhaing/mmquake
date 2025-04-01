@@ -8,16 +8,24 @@ interface InfoCard {
   type: string;
   icon: JSX.Element;
   description: string;
+  mmDescription: string;
   route: string;
 }
 
 const cards: InfoCard[] = [
-
+  // {
+  //   type: 'missing',
+  //   title: 'Missing Persons',
+  //   icon: <Users size={28} />,
+  //   description: 'Reported missing individuals in affected areas.',
+  //   route: '/missing-persons',
+  // },
   {
     type: "rescue",
     title: "Rescue Teams",
     icon: <Shield size={28} />,
     description: "Teams deployed for search and rescue operations.",
+    mmDescription: "ကယ်ဆယ်ရေးအဖွဲ့များနှင့် အရေးပေါ်တုံ့ပြန်သူများကို ရှာဖွေပါ",
     route: "/rescue-teams",
   },
   {
@@ -25,6 +33,7 @@ const cards: InfoCard[] = [
     title: "Community Services",
     icon: <HandHelping size={28} />,
     description: "Local aid services offering food & shelter.",
+    mmDescription: "အခမဲ့ဝန်ဆောင်မှုများကို ပြုလုပ်ပေးနေသော အသိုင်းအဝိုင်းအဖွဲ့များကို ရှာဖွေပါ",
     route: "/community-services",
   },
   {
@@ -32,6 +41,7 @@ const cards: InfoCard[] = [
     title: "Free Charging Stations",
     icon: <BatteryCharging size={28} />,
     description: "Mobile charging stations for public use.",
+    mmDescription: "အခမဲ့ဖုန်းအားသွင်းရန်နေရာများကို ရှာဖွေပါ",
     route: "/charging-stations",
   },
 ];
@@ -40,8 +50,8 @@ const InfoGrid: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <h2 className="text-xl font-semibold mb-4">Helpful Directories</h2>
+    <div className="p-2">
+      {/* <h2 className="text-xl font-semibold mb-4">Helpful Directories</h2> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {cards.map((card) => (
           <div
@@ -51,7 +61,11 @@ const InfoGrid: React.FC = () => {
           >
             <div className="text-blue-600">{card.icon}</div>
             <h3 className="text-base font-semibold">{card.title}</h3>
-            <p className="text-sm text-gray-600">{card.description}</p>
+            <p className="text-sm text-gray-600">
+              {card.description}
+              <span className="block mt-1 text-sm">{card.mmDescription}</span>
+            </p>
+            
           </div>
         ))}
       </div>

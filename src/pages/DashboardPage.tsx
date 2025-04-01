@@ -9,8 +9,9 @@ const DashboardPage: React.FC = () => {
     <>
       <StatsOverview />
       <EarthquakeMonitor />
-      <FundraisingSection />
       <InfoGrid />
+      <FundraisingSection />
+
     </>
   );
 };
