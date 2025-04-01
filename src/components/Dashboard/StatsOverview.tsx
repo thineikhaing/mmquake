@@ -12,26 +12,31 @@ interface Stat {
 const stats: Stat[] = [
   {
     title: 'Deaths',
-    value: 3034,
+    value: 3756,
     color: 'bg-red-600',
     icon: <AlertTriangle size={28} />,
   },
   {
     title: 'Injuries',
-    value: 3517,
+    value: 4575,
     color: 'bg-yellow-500',
     icon: <HeartPulse size={28} />,
   },
   {
     title: 'Missing',
-    value: 498,
+    value: 705,
     color: 'bg-blue-500',
     icon: <Search size={28} />,
   },
 ];
 
 const StatsOverview: React.FC = () => (
-  <div className="text-center mt-2">
+  <>
+
+      <div className="flex justify-between items-center">
+        <h1 className="text-sm text-gray-500">Last updated: 4/1/2025</h1>
+        </div>
+      <div className="text-center mt-2">
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
       {stats.map((stat) => (
         <div
@@ -49,7 +54,17 @@ const StatsOverview: React.FC = () => (
         </div>
       ))}
     </div>
+    
   </div>
+<p className="bg-yellow-50 border border-yellow-200 p-4 rounded mt-4 text-sm text-gray-500">
+  ဒီအရေအတွက်ဟာ<span className="font-medium"> DVB </span>ကလက်လှမ်းမီသလောက် ရရှိထားတဲ့ ကိန်းဂဏန်းတွေသာဖြစ်ပြီး၊ ကယ်ဆယ်ရေးလုပ်ငန်းတွေ လုပ်ဆောင်နေဆဲ အခြေအနေ ဖြစ်တာကြောင့် သေဆုံးသူဦးရေ <span className="text-red-600 font-semibold">ထပ်တိုးနိုင်ပါတယ်။</span><br />
+  <span className="block">
+    These numbers are based on currently accessible data from <span className="font-medium">DVB</span>. As rescue operations are still ongoing on the ground, the number of casualties may <span className="text-red-600 font-semibold">continue to rise</span>.
+  </span>
+</p>
+
+  </>
+  
 );
 
 export default StatsOverview;
