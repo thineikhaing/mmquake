@@ -6,9 +6,21 @@ import ChargingPage from "./pages/ChargingPage";
 import SubmitAndDisplayNeeds from "./pages/SubmitAndDisplayNeeds";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import {useState } from "react";
+import { registerSW } from "virtual:pwa-register";
+import UpdatePrompt from "./components/UpdatePrompt";
 import "./App.css";
 
 function App() {
+  const [needRefresh, setNeedRefresh] = useState(false);
+  const updateSW = registerSW({
+    onNeedRefresh() {
+      setNeedRefresh(true);
+    },
+    onOfflineReady() {
+      console.log("PWA ready for offline use");
+    },
+  });
   return (
     <>
       <Header/>
@@ -20,6 +32,7 @@ function App() {
           <Route path="/charging-stations" element={<ChargingPage />} />
           <Route path="/community-needs" element={<SubmitAndDisplayNeeds />} />
         </Routes>
+        {needRefresh && <UpdatePrompt onUpdate={() => updateSW(true)} />}
       </div>
       <Footer/>
     </>

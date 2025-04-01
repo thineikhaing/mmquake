@@ -13,14 +13,14 @@ const Header = () => {
       </Link>
       <button
         onClick={() => navigate("/community-needs")}
-        className="text-orange-600 text-orange text-sm sm:text-base px-4 py-2 rounded hover:text-orange-700 transition flex items-center gap-2"
+        className="text-orange-600 text-orange text-xl l:text-base px-4 py-2 rounded hover:text-orange-700 transition flex items-center gap-2"
       >
         <img
           src="/images/submitReport.png"
           alt="Submit Icon"
           className="w-12 h-12"
         />
-        Request Needs
+        Request A Needs
       </button>
     </header>
   );
