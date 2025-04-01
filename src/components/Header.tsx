@@ -9,7 +9,7 @@ const Header = () => {
         to="/"
         className="text-xl font-bold text-orange-600 hover:underline"
       >
-        MM Quake
+        Myanmar Earthquake
       </Link>
       <button
         onClick={() => navigate("/community-needs")}

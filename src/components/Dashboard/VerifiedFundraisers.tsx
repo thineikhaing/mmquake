@@ -32,7 +32,7 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 61685,
+    raised: 67167,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -42,7 +42,7 @@ const fundraisers: Fundraiser[] = [
     region: "Global",
     flag: "🌐",
     goal: 150000000,
-    raised: 895241122,
+    raised: 1032219734,
     image: "/images/fundraisers/spring-rev.png",
   },
   {
@@ -52,7 +52,7 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 136000,
+    raised: 144195,
     image: "/images/fundraisers/gofundme.png",
   },
 ];
