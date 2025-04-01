@@ -60,7 +60,7 @@ const StatsOverview: React.FC = () => (
 ဒီအရေအတွက်ဟာ က လက်လှမ်းမီသလောက် ရရှိထားတဲ့ ကိန်းဂဏန်းတွေသာဖြစ်ပြီး၊ ကယ်ဆယ်ရေးလုပ်ငန်းတွေ လုပ်ဆောင်နေဆဲ အခြေအနေ ဖြစ်တာကြောင့် သေဆုံးသူဦးရေ 
   <span className="text-red-600 font-semibold">ထပ်တိုးနိုင်ပါတယ်။</span><br />
   
-  <span className="block mt-2">
+  <span className="block mt-1">
     These numbers are based on currently accessible data from 
     <a
       href="https://burmese.dvb.no/live"
