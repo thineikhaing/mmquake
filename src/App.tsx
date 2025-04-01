@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className="space-y-12 p-6 bg-gray-50 min-h-screen">
+      <div className="space-y-8 p-6 bg-gray-50 min-h-screen">
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/rescue-teams" element={<RescueTeamsPage />} />

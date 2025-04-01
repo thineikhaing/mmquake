@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { format, subDays } from "date-fns";
-
+import { Earth } from "lucide-react";
 interface Earthquake {
   id: string;
   magnitude: number;
@@ -31,7 +31,7 @@ const EarthquakeMonitor: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const perPage = 10;
   const hasAutoRedirected = useRef(false);
-  
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -49,15 +49,15 @@ const EarthquakeMonitor: React.FC = () => {
           url: item.properties.url,
         }));
 
-        if (
-          parsed.length === 0 &&
-          filter === "24h" &&
-          !hasAutoRedirected.current
-        ) {
-          hasAutoRedirected.current = true;
-          setFilter("week");
-          return;
-        }
+      if (
+        parsed.length === 0 &&
+        filter === "24h" &&
+        !hasAutoRedirected.current
+      ) {
+        hasAutoRedirected.current = true;
+        setFilter("week");
+        return;
+      }
 
       setQuakes(parsed);
       setCurrentPage(1);
@@ -84,7 +84,10 @@ const EarthquakeMonitor: React.FC = () => {
   return (
     <div className="mb-12 p-3 shadow-md rounded-lg">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-        <h2 className="text-xl font-semibold">Earthquake Monitor</h2>
+        <h2 className="text-xl font-semibold flex items-center gap-2">
+          <Earth size={20} className="text-yellow-500" />
+          Earthquake Monitor
+        </h2>
         <div className="flex flex-wrap items-center gap-2">
           <label htmlFor="time-filter" className="text-sm font-medium">
             Time Period:

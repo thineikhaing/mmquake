@@ -20,8 +20,8 @@ const fundraisers: Fundraiser[] = [
     link: "https://www.myanmarearthquakehelp.com/en/donate",
     region: "Myanmar",
     flag: "🇲🇲",
-    goal: 12500,
-    raised: 11915,
+    goal: 20000,
+    raised: 14200,
     image: "/images/fundraisers/mer.png",
   },
   {
@@ -32,7 +32,7 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 55630,
+    raised: 61685,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -42,7 +42,7 @@ const fundraisers: Fundraiser[] = [
     region: "Global",
     flag: "🌐",
     goal: 150000000,
-    raised: 813025004,
+    raised: 895241122,
     image: "/images/fundraisers/spring-rev.png",
   },
   {
@@ -52,24 +52,27 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 125402,
+    raised: 136000,
     image: "/images/fundraisers/gofundme.png",
   },
 ];
 
 const VerifiedFundraisers: React.FC = () => (
   <div className="mb-12">
-    <h2 className="text-xl font-semibold mb-4">
+    {/* <h2 className="text-xl font-semibold mb-4">
       Verified Fundraising Organizations
-    </h2>
+    </h2> */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
       {fundraisers.map((f, idx) => (
         <div
           key={idx}
           className="p-6 bg-white rounded-xl shadow-md flex flex-col space-y-3 border-l-4 border-green-500"
         >
-          <div className="flex justify-between items-start">
+          <div className="">
             <div>
+              {/* <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
+                Verified
+              </span> */}
               {f.image && (
                 <img
                   src={f.image}
@@ -80,11 +83,8 @@ const VerifiedFundraisers: React.FC = () => (
               <h3 className="text-lg font-semibold flex items-center gap-2">
                 {f.flag && <span className="text-xl">{f.flag}</span>} {f.name}
               </h3>
-              <p className="text-sm text-gray-500">{f.region}</p>
+              {/* <p className="text-sm text-gray-500">{f.region}</p> */}
             </div>
-            <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
-              Verified
-            </span>
           </div>
 
           <p className="text-sm text-gray-700">{f.description}</p>
