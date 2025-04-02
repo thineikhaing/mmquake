@@ -25,7 +25,7 @@ const SubNavTabs: React.FC<Props> = ({ onSelect }) => {
             : "bg-white text-gray-700 border-gray-300 hover:bg-blue-50"
         }`}
       >
-        <Landmark size={16} /> Fundraising Organizations
+        <Landmark size={16} /> Verified Fundraising Organizations
       </button>
       <button
         onClick={() => handleClick("campaigns")}

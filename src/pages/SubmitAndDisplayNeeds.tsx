@@ -110,10 +110,11 @@ const SubmitAndDisplayNeeds: React.FC = () => {
 
   return (
     <div className="space-y-12 bg-gray-50 min-h-screen">
-      <div className="bg-white rounded-xl shadow-md">
-        <h2 className="text-xl font-semibold mb-4">
-          Requested Community Needs
-        </h2>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+      <div className="flex justify-between items-center">
+        <h1 className="text-2xl font-bold">Requested Needs</h1>
+      </div>
         {needs.length === 0 ? (
           <p className="text-sm text-gray-600">No verified needs yet.</p>
         ) : (
@@ -141,7 +142,10 @@ const SubmitAndDisplayNeeds: React.FC = () => {
                           ✔ Yes
                         </span>
                       ) : (
-                        <span className="text-red-500 font-medium"> Not yet</span>
+                        <span className="text-red-500 font-medium">
+                          {" "}
+                          Not yet
+                        </span>
                       )}
                     </td>
                   </tr>

@@ -3,6 +3,7 @@ import DashboardPage from "./pages/DashboardPage";
 import RescueTeamsPage from "./pages/RescueTeamsPage";
 import CommunitiesPage from "./pages/CommunitiesPage";
 import ChargingPage from "./pages/ChargingPage";
+import CranePage from "./pages/CranePage";
 import SubmitAndDisplayNeeds from "./pages/SubmitAndDisplayNeeds";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/rescue-teams" element={<RescueTeamsPage />} />
           <Route path="/community-services" element={<CommunitiesPage />} />
           <Route path="/charging-stations" element={<ChargingPage />} />
+          <Route path="/crane" element={<CranePage />} />
           <Route path="/community-needs" element={<SubmitAndDisplayNeeds />} />
         </Routes>
         {needRefresh && <UpdatePrompt onUpdate={() => updateSW(true)} />}

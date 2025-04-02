@@ -1,7 +1,7 @@
 // src/components/Dashboard/InfoGrid.tsx
 import React, { JSX } from "react";
 import { useNavigate } from "react-router-dom";
-import { Shield, HandHelping, BatteryCharging } from "lucide-react";
+import { Shield, HandHelping, BatteryCharging, Truck } from "lucide-react";
 
 interface InfoCard {
   title: string;
@@ -13,13 +13,6 @@ interface InfoCard {
 }
 
 const cards: InfoCard[] = [
-  // {
-  //   type: 'missing',
-  //   title: 'Missing Persons',
-  //   icon: <Users size={28} />,
-  //   description: 'Reported missing individuals in affected areas.',
-  //   route: '/missing-persons',
-  // },
   {
     type: "rescue",
     title: "Rescue Teams",
@@ -27,6 +20,14 @@ const cards: InfoCard[] = [
     description: "Teams deployed for search and rescue operations.",
     mmDescription: "ကယ်ဆယ်ရေးအဖွဲ့များနှင့် အရေးပေါ်တုံ့ပြန်သူများကို ရှာဖွေပါ",
     route: "/rescue-teams",
+  },
+    {
+    type: 'crane',
+    title: 'Crane Services',
+    icon: <Truck size={28} />,
+    description: 'Find free crane services for rescue operations',
+    mmDescription: "ကယ်ဆယ်ရေးလုပ်ငန်းများအတွက် အခမဲ့ကရိန်းဝန်ဆောင်မှုများကို ရှာဖွေပါ",
+    route: '/crane',
   },
   {
     type: "community",

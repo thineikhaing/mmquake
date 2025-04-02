@@ -47,7 +47,7 @@ const CommunitiesPage: React.FC = () => {
 
       <div className="">
         <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Communities Services</h1>
+          <h1 className="text-2xl font-bold">Communities Services</h1>
         </div>
         <div className="overflow-x-auto bg-white rounded-xl shadow">
           <table className="min-w-full text-sm text-left">
