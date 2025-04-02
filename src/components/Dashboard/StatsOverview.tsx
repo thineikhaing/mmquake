@@ -12,19 +12,19 @@ interface Stat {
 const stats: Stat[] = [
   {
     title: 'Deaths',
-    value: 3756,
+    value: 3848,
     color: 'bg-red-600',
     icon: <AlertTriangle size={28} />,
   },
   {
     title: 'Injuries',
-    value: 4575,
+    value: 4725,
     color: 'bg-yellow-500',
     icon: <HeartPulse size={28} />,
   },
   {
     title: 'Missing',
-    value: 705,
+    value: 708,
     color: 'bg-blue-500',
     icon: <Search size={28} />,
   },
@@ -34,7 +34,7 @@ const StatsOverview: React.FC = () => (
   <>
 
       <div className="flex justify-between items-center">
-        <h1 className="text-sm text-gray-500">Last updated: 4/1/2025</h1>
+        <h1 className="text-sm text-gray-500">Last updated: 2/1/2025</h1>
         </div>
       <div className="text-center mt-2">
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

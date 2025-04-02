@@ -13,17 +13,7 @@ interface Fundraiser {
 }
 
 const fundraisers: Fundraiser[] = [
-  {
-    name: "Myanmar Earthquake Relief",
-    description:
-      "This website is a community effort set up by Myanmar volunteers based abroad to support the relief effort.",
-    link: "https://www.myanmarearthquakehelp.com/en/donate",
-    region: "Myanmar",
-    flag: "🇲🇲",
-    goal: 20000,
-    raised: 16770,
-    image: "/images/fundraisers/mer.png",
-  },
+
   {
     name: "Lions Hands to Chinthe (Singapore)",
     description:
@@ -32,18 +22,18 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 68652,
+    raised: 71134,
     image: "/images/fundraisers/lions.png",
   },
   {
-    name: "Spring Revolution Fund (Global)",
-    description: "Crowdfunded campaign supporting emergency relief in Myanmar.",
-    link: "https://springcrowdfund.org/campaign/2a026f8a-6799-4a46-9fb6-b6f4526cfa4a",
-    region: "Global",
-    flag: "🌐",
-    goal: 150000000,
-    raised: 1081066909,
-    image: "/images/fundraisers/spring-rev.png",
+    name: "Emergency Solar Power Relief Efforts",
+    description:"We are Mee Panyar, a social enterprise that has been working on solar PV infrastructure development and capacity building in Myanmar since 2016.",
+    link: "https://www.gofundme.com/f/emergency-solar-power-for-myanmar-earthquake-relief-efforts",
+    region: "Myanmar",
+    flag: "🇲🇲",
+    goal: 10000,
+    raised: 2429,
+    image: "/images/fundraisers/meepanyar.png",
   },
   {
     name: "UK Earthquake Relief for Myanmar",
@@ -52,9 +42,31 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 146042,
+    raised: 149285,
     image: "/images/fundraisers/gofundme.png",
   },
+  {
+    name: "Myanmar Earthquake Relief",
+    description:
+      "This website is a community effort set up by Myanmar volunteers based abroad to support the relief effort.",
+    link: "https://www.myanmarearthquakehelp.com/en/donate",
+    region: "Myanmar",
+    flag: "🇲🇲",
+    goal: 20000,
+    raised: 17400,
+    image: "/images/fundraisers/mer.png",
+  },
+  {
+    name: "Spring Revolution Fund (Global)",
+    description: "Crowdfunded campaign supporting emergency relief in Myanmar.",
+    link: "https://springcrowdfund.org/campaign/2a026f8a-6799-4a46-9fb6-b6f4526cfa4a",
+    region: "Global",
+    flag: "🌐",
+    goal: 150000000,
+    raised: 1170312810,
+    image: "/images/fundraisers/spring-rev.png",
+  }
+
 ];
 
 const VerifiedFundraisers: React.FC = () => (

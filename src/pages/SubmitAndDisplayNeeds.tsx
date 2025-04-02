@@ -1,6 +1,8 @@
 // SubmitAndDisplayNeeds.tsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Home, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Need {
   id: string;
@@ -109,12 +111,24 @@ const SubmitAndDisplayNeeds: React.FC = () => {
   };
 
   return (
-    <div className="space-y-12 bg-gray-50 min-h-screen">
-
+    <div className="space-y-2 bg-gray-50 min-h-screen">
+      <nav className="flex items-center text-sm text-gray-600 space-x-2">
+        <Link
+          to="/"
+          className="flex items-center text-gray-500 hover:text-gray-700"
+        >
+          <Home size={16} className="mr-1" />
+          <span>Home</span>
+        </Link>
+        <ChevronRight size={14} className="text-gray-400" />
+        <span className="font-semibold text-gray-900">
+          Request a needs
+        </span>
+      </nav>
       <div className="bg-white p-6 rounded-xl shadow-md">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Requested Needs</h1>
-      </div>
+        <div className="flex justify-between items-center">
+          <h1 className="text-2xl font-bold">Requested Needs</h1>
+        </div>
         {needs.length === 0 ? (
           <p className="text-sm text-gray-600">No verified needs yet.</p>
         ) : (
