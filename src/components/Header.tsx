@@ -4,12 +4,12 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="bg-white shadow-md px-4 flex justify-between items-center">
+    <header className="bg-white shadow-md py-4 px-4 flex justify-between items-center">
       <Link
         to="/"
         className="text-xl font-bold text-orange-600 hover:underline"
       >
-        Myanmar Earthquake
+        Myanmar Earthquake 
       </Link>
       <button
         onClick={() => navigate("/community-needs")}
@@ -20,7 +20,6 @@ const Header = () => {
           alt="Submit Icon"
           className="w-12 h-12"
         />
-        Request A Needs
       </button>
     </header>
   );

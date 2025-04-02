@@ -1,6 +1,16 @@
+// EarthquakeMonitor.tsx (with Leaflet map, colored pins, and fullscreen toggle)
 import React, { useEffect, useState, useRef } from "react";
 import { format, subDays } from "date-fns";
-import { Earth } from "lucide-react";
+import { Earth, Expand } from "lucide-react";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+} from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
 interface Earthquake {
   id: string;
   magnitude: number;
@@ -8,6 +18,8 @@ interface Earthquake {
   time: number;
   depth: number;
   url: string;
+  latitude: number;
+  longitude: number;
 }
 
 const API_URLS = {
@@ -23,13 +35,18 @@ const filterLabels = {
   week: "Past Week",
   month: "Past Month",
 };
+const earthquakeIcon = new L.Icon({
+  iconUrl: '/icons/quake.png',
+  iconSize: [24, 24],
+});
 
 const EarthquakeMonitor: React.FC = () => {
   const [filter, setFilter] = useState<"24h" | "week" | "month">("24h");
   const [quakes, setQuakes] = useState<Earthquake[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const perPage = 10;
+  const [showMap, setShowMap] = useState<boolean>(false);
+  const perPage = 5;
   const hasAutoRedirected = useRef(false);
 
   useEffect(() => {
@@ -47,6 +64,8 @@ const EarthquakeMonitor: React.FC = () => {
           time: item.properties.time,
           depth: item.geometry.coordinates[2],
           url: item.properties.url,
+          latitude: item.geometry.coordinates[1],
+          longitude: item.geometry.coordinates[0],
         }));
 
       if (
@@ -81,6 +100,15 @@ const EarthquakeMonitor: React.FC = () => {
   const currentQuakes = quakes.slice(indexOfFirst, indexOfLast);
   const totalPages = Math.ceil(quakes.length / perPage);
 
+  const getColorByMagnitude = (mag: number) => {
+    if (mag < 2.5) return "gray";
+    if (mag < 5) return "yellow";
+    if (mag < 6) return "orange";
+    if (mag < 7) return "red";
+    if (mag < 8) return "pink";
+    return "purple";
+  };
+
   return (
     <div className="mb-12 p-3 shadow-md rounded-lg">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
@@ -98,7 +126,7 @@ const EarthquakeMonitor: React.FC = () => {
             onChange={(e) =>
               setFilter(e.target.value as "24h" | "week" | "month")
             }
-            className="text-sm border border-gray-300 rounded-md px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="text-sm border border-gray-300 rounded-md px-3 py-1.5"
           >
             <option value="24h">Past 24 Hours</option>
             <option value="week">Past Week</option>
@@ -114,8 +142,7 @@ const EarthquakeMonitor: React.FC = () => {
         <p>Loading data...</p>
       ) : currentQuakes.length === 0 ? (
         <p className="text-sm text-gray-600 mt-2">
-          No earthquakes recorded in Myanmar region during the selected time
-          period.
+          No earthquakes recorded in Myanmar region during the selected time period.
         </p>
       ) : (
         <>
@@ -136,21 +163,7 @@ const EarthquakeMonitor: React.FC = () => {
                     <td className="px-4 py-2">
                       {format(new Date(eq.time), "MMM dd, yyyy, hh:mm a")}
                     </td>
-                    <td
-                      className={`px-4 py-2 font-semibold ${
-                        eq.magnitude < 2.5
-                          ? "text-gray-500"
-                          : eq.magnitude < 5
-                          ? "text-yellow-500"
-                          : eq.magnitude < 6
-                          ? "text-orange-500"
-                          : eq.magnitude < 7
-                          ? "text-red-600"
-                          : eq.magnitude < 8
-                          ? "text-pink-600"
-                          : "text-purple-600"
-                      }`}
-                    >
+                    <td className={`px-4 py-2 font-semibold text-${getColorByMagnitude(eq.magnitude)}-500`}>
                       {eq.magnitude.toFixed(1)}
                     </td>
                     <td className="px-4 py-2">{eq.place}</td>
@@ -171,7 +184,6 @@ const EarthquakeMonitor: React.FC = () => {
             </table>
           </div>
 
-          {/* Pagination */}
           {totalPages > 1 && (
             <div className="mt-4 flex justify-center gap-2">
               {Array.from({ length: totalPages }, (_, idx) => (
@@ -189,10 +201,40 @@ const EarthquakeMonitor: React.FC = () => {
               ))}
             </div>
           )}
+
+          <button
+            onClick={() => setShowMap(!showMap)}
+            className="mt-2 flex items-center gap-1 text-sm bg-orange-200 hover:bg-orange-300 px-3 py-1.5 rounded"
+          >
+            <Expand size={16} /> {showMap ? "Hide Map" : "Show Map with Pins"}
+          </button>
+
+          {showMap && (
+            <div className="mt-4 overflow-hidden rounded-lg shadow">
+              <MapContainer
+                center={[21.5, 95]}
+                zoom={6}
+                style={{ height: "400px", width: "100%" }}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                {currentQuakes.map((quake) => (
+                  <Marker key={quake.id} position={[quake.latitude, quake.longitude]} icon={earthquakeIcon}>
+                    <Popup>
+                      <strong>{quake.place}</strong><br />
+                      Mag: {quake.magnitude.toFixed(1)}<br />
+                      Depth: {quake.depth} km
+                    </Popup>
+                  </Marker>
+                ))}
+              </MapContainer>
+            </div>
+          )}
         </>
       )}
 
-      {/* Magnitude Legend */}
       <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-gray-600">
         <span className="text-gray-500">⬤ Micro (&lt;2.5)</span>
         <span className="text-yellow-500">⬤ Minor (2.5–4.9)</span>
@@ -202,9 +244,8 @@ const EarthquakeMonitor: React.FC = () => {
         <span className="text-purple-600">⬤ Great (≥8.0)</span>
       </div>
 
-      {/* USGS Credit */}
       <div className="mt-2 text-center text-xs text-gray-600 bg-gray-50 p-3 rounded-lg">
-        Earthquake information provided by the{" "}
+        Earthquake information provided by the {" "}
         <a
           href="https://earthquake.usgs.gov"
           target="_blank"
