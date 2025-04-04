@@ -35,7 +35,7 @@ const CommunityCampaigns: React.FC = () => {
   const [filteredCampaigns, setFilteredCampaigns] = useState<CommunityCampaign[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [regionFilter, setRegionFilter] = useState<string>('All');
-  const itemsPerPage = 4;
+  const itemsPerPage = 6;
 
   useEffect(() => {
     fetch('/data/community_campaigns.csv')
@@ -95,7 +95,7 @@ const CommunityCampaigns: React.FC = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {currentItems.map((c, idx) => (
           <div
             key={idx}
