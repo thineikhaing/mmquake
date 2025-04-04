@@ -2,12 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { format, subDays } from "date-fns";
 import { Earth, Expand } from "lucide-react";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-} from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -36,7 +31,7 @@ const filterLabels = {
   month: "Past Month",
 };
 const earthquakeIcon = new L.Icon({
-  iconUrl: '/icons/quake.png',
+  iconUrl: "/icons/quake.png",
   iconSize: [24, 24],
 });
 
@@ -142,7 +137,8 @@ const EarthquakeMonitor: React.FC = () => {
         <p>Loading data...</p>
       ) : currentQuakes.length === 0 ? (
         <p className="text-sm text-gray-600 mt-2">
-          No earthquakes recorded in Myanmar region during the selected time period.
+          No earthquakes recorded in Myanmar region during the selected time
+          period.
         </p>
       ) : (
         <>
@@ -163,7 +159,11 @@ const EarthquakeMonitor: React.FC = () => {
                     <td className="px-4 py-2">
                       {format(new Date(eq.time), "MMM dd, yyyy, hh:mm a")}
                     </td>
-                    <td className={`px-4 py-2 font-semibold text-${getColorByMagnitude(eq.magnitude)}-500`}>
+                    <td
+                      className={`px-4 py-2 font-semibold text-${getColorByMagnitude(
+                        eq.magnitude
+                      )}-500`}
+                    >
                       {eq.magnitude.toFixed(1)}
                     </td>
                     <td className="px-4 py-2">{eq.place}</td>
@@ -204,9 +204,15 @@ const EarthquakeMonitor: React.FC = () => {
 
           <button
             onClick={() => setShowMap(!showMap)}
-            className="mt-2 flex items-center gap-1 text-sm bg-orange-200 hover:bg-orange-300 px-3 py-1.5 rounded"
+            className="mt-2 flex items-center gap-2 text-sm bg-gray-200 hover:bg-gray-300 px-3 py-1.5 rounded"
           >
-            <Expand size={16} /> {showMap ? "Hide Map" : "Show Map with Pins"}
+            <Expand size={16} />
+            <div className="flex flex-col text-left leading-tight">
+              <span>{showMap ? "Hide Map" : "Show Map with Pins"}</span>
+              <span className="text-xs text-gray-700">
+                {showMap ? "မြေပုံဖျောက်မည်" : "မြေပုံနှင့် နေရာပြမည်"}
+              </span>
+            </div>
           </button>
 
           {showMap && (
@@ -221,10 +227,16 @@ const EarthquakeMonitor: React.FC = () => {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 {currentQuakes.map((quake) => (
-                  <Marker key={quake.id} position={[quake.latitude, quake.longitude]} icon={earthquakeIcon}>
+                  <Marker
+                    key={quake.id}
+                    position={[quake.latitude, quake.longitude]}
+                    icon={earthquakeIcon}
+                  >
                     <Popup>
-                      <strong>{quake.place}</strong><br />
-                      Mag: {quake.magnitude.toFixed(1)}<br />
+                      <strong>{quake.place}</strong>
+                      <br />
+                      Mag: {quake.magnitude.toFixed(1)}
+                      <br />
                       Depth: {quake.depth} km
                     </Popup>
                   </Marker>
@@ -245,7 +257,7 @@ const EarthquakeMonitor: React.FC = () => {
       </div>
 
       <div className="mt-2 text-center text-xs text-gray-600 bg-gray-50 p-3 rounded-lg">
-        Earthquake information provided by the {" "}
+        Earthquake information provided by the{" "}
         <a
           href="https://earthquake.usgs.gov"
           target="_blank"

@@ -22,7 +22,7 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 71134,
+    raised: 74390,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -32,7 +32,7 @@ const fundraisers: Fundraiser[] = [
     region: "Myanmar",
     flag: "🇲🇲",
     goal: 10000,
-    raised: 2429,
+    raised: 5349,
     image: "/images/fundraisers/meepanyar.png",
   },
   {
@@ -42,7 +42,7 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 149285,
+    raised: 158866,
     image: "/images/fundraisers/gofundme.png",
   },
   {
@@ -52,8 +52,8 @@ const fundraisers: Fundraiser[] = [
     link: "https://www.myanmarearthquakehelp.com/en/donate",
     region: "Myanmar",
     flag: "🇲🇲",
-    goal: 20000,
-    raised: 17400,
+    goal: 35000,
+    raised: 25234,
     image: "/images/fundraisers/mer.png",
   },
   {
@@ -63,7 +63,7 @@ const fundraisers: Fundraiser[] = [
     region: "Global",
     flag: "🌐",
     goal: 150000000,
-    raised: 1170312810,
+    raised: 1289036989,
     image: "/images/fundraisers/spring-rev.png",
   }
 
