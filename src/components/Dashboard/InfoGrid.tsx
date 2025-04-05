@@ -1,11 +1,6 @@
 import React, { JSX } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  Shield,
-  HandHelping,
-  BatteryCharging,
-  Truck,
-} from "lucide-react";
+import { Shield, HandHelping, BatteryCharging, Truck } from "lucide-react";
 
 interface InfoCard {
   title: string;
@@ -29,8 +24,7 @@ const cards: InfoCard[] = [
     title: "Rescue Teams",
     icon: <Shield size={28} />,
     description: "Teams deployed for search and rescue operations.",
-    mmDescription:
-      "ကယ်ဆယ်ရေးအဖွဲ့များနှင့် အရေးပေါ်တုံ့ပြန်သူများကို ရှာဖွေပါ",
+    mmDescription: "ကယ်ဆယ်ရေးအဖွဲ့များနှင့် အရေးပေါ်တုံ့ပြန်သူများကို ရှာဖွေပါ",
     route: "/rescue-teams",
   },
   {
@@ -56,8 +50,7 @@ const cards: InfoCard[] = [
     title: "Free Charging Stations",
     icon: <BatteryCharging size={28} />,
     description: "Mobile charging stations for public use.",
-    mmDescription:
-      "အခမဲ့ဖုန်းအားသွင်းရန်နေရာများကို ရှာဖွေပါ",
+    mmDescription: "အခမဲ့ဖုန်းအားသွင်းရန်နေရာများကို ရှာဖွေပါ",
     route: "/charging-stations",
   },
 ];
@@ -67,7 +60,7 @@ const InfoGrid: React.FC = () => {
 
   return (
     <div className="mb-12 p-3 shadow-md rounded-lg">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {cards.map((card) => (
           <div
             key={card.type}
@@ -75,11 +68,15 @@ const InfoGrid: React.FC = () => {
             onClick={() => navigate(card.route)}
           >
             <div
-              className={`w-12 h-12 flex items-center justify-center rounded-full mb-2 ${iconColors[card.type]} transition-all`}
+              className={`w-12 h-12 flex items-center justify-center rounded-full mb-2 ${
+                iconColors[card.type]
+              } transition-all`}
             >
               {React.cloneElement(card.icon, { size: 24 })}
             </div>
-            <h3 className="text-lg font-semibold text-gray-800">{card.title}</h3>
+            <h3 className="text-lg font-semibold text-gray-800">
+              {card.title}
+            </h3>
             <p className="text-sm text-gray-600 leading-snug">
               {card.description}
               <span className="block mt-1 text-gray-500">

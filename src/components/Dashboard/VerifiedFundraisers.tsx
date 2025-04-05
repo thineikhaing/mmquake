@@ -22,7 +22,7 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 74390,
+    raised: 76321,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -32,7 +32,7 @@ const fundraisers: Fundraiser[] = [
     region: "Myanmar",
     flag: "🇲🇲",
     goal: 10000,
-    raised: 5349,
+    raised: 5669,
     image: "/images/fundraisers/meepanyar.png",
   },
   {
@@ -42,7 +42,7 @@ const fundraisers: Fundraiser[] = [
     region: "UK",
     flag: "🇬🇧",
     goal: 140000,
-    raised: 158866,
+    raised: 163100,
     image: "/images/fundraisers/gofundme.png",
   },
   {
@@ -53,7 +53,7 @@ const fundraisers: Fundraiser[] = [
     region: "Myanmar",
     flag: "🇲🇲",
     goal: 35000,
-    raised: 25234,
+    raised: 27434,
     image: "/images/fundraisers/mer.png",
   },
   {
@@ -63,7 +63,7 @@ const fundraisers: Fundraiser[] = [
     region: "Global",
     flag: "🌐",
     goal: 150000000,
-    raised: 1289036989,
+    raised: 1409762761,
     image: "/images/fundraisers/spring-rev.png",
   }
 
@@ -71,7 +71,7 @@ const fundraisers: Fundraiser[] = [
 
 const VerifiedFundraisers: React.FC = () => (
   <div className="mb-12">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
       {fundraisers.map((f, idx) => (
         <div
           key={idx}

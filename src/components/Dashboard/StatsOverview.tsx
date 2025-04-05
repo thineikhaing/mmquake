@@ -15,21 +15,21 @@ const stats: Stat[] = [
   {
     title: 'Deaths',
     mmTitle: 'သေဆုံး',
-    value: 4159,
+    value: 4210,
     color: 'bg-red-600',
     icon: <AlertTriangle size={24} />,
   },
   {
     title: 'Injuries',
     mmTitle: 'ဒဏ်ရာရ',
-    value: 6168,
+    value: 6505,
     color: 'bg-yellow-500',
     icon: <HeartPulse size={24} />,
   },
   {
     title: 'Missing',
     mmTitle: 'ပျောက်ဆုံး',
-    value: 796,
+    value: 448,
     color: 'bg-blue-500',
     icon: <Search size={24} />,
   },
@@ -45,7 +45,7 @@ const stats: Stat[] = [
 const StatsOverview: React.FC = () => (
   <>
     <div className="flex justify-between items-center mb-2">
-      <h1 className="text-sm text-gray-500">Last updated: 4/1/2025</h1>
+      <h1 className="text-sm text-gray-500">Last updated: 5/1/2025</h1>
     </div>
 
     <div className="grid grid-cols-4 gap-2">
