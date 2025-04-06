@@ -22,7 +22,7 @@ const fundraisers: Fundraiser[] = [
     region: "Singapore",
     flag: "🇸🇬",
     goal: 10000,
-    raised: 76321,
+    raised: 77281,
     image: "/images/fundraisers/lions.png",
   },
   {
@@ -32,7 +32,7 @@ const fundraisers: Fundraiser[] = [
     region: "Myanmar",
     flag: "🇲🇲",
     goal: 10000,
-    raised: 5669,
+    raised: 6869,
     image: "/images/fundraisers/meepanyar.png",
   },
   {
@@ -41,8 +41,8 @@ const fundraisers: Fundraiser[] = [
     link: "https://www.gofundme.com/f/h7fg8y-earthquake-relief-for-myanmar-urgent-support-needed",
     region: "UK",
     flag: "🇬🇧",
-    goal: 140000,
-    raised: 163100,
+    goal: 200000,
+    raised: 166042,
     image: "/images/fundraisers/gofundme.png",
   },
   {
@@ -53,7 +53,7 @@ const fundraisers: Fundraiser[] = [
     region: "Myanmar",
     flag: "🇲🇲",
     goal: 35000,
-    raised: 27434,
+    raised: 28399,
     image: "/images/fundraisers/mer.png",
   },
   {
@@ -63,7 +63,7 @@ const fundraisers: Fundraiser[] = [
     region: "Global",
     flag: "🌐",
     goal: 150000000,
-    raised: 1409762761,
+    raised: 1444415244,
     image: "/images/fundraisers/spring-rev.png",
   }
 

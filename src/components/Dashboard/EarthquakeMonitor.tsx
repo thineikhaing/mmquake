@@ -198,7 +198,7 @@ const EarthquakeMonitor: React.FC = () => {
 
           <button
             onClick={() => setShowMap(!showMap)}
-            className="mt-1 flex items-center gap-2 text-sm bg-gray-200 hover:bg-gray-300 px-3 py-1.5 rounded"
+            className="mt-2 flex items-center gap-2 text-sm bg-gray-200 hover:bg-gray-300 px-3 py-1.5 rounded"
           >
             <Expand size={16} />
             <div className="flex flex-col text-left leading-tight">
@@ -210,7 +210,7 @@ const EarthquakeMonitor: React.FC = () => {
           </button>
 
           {showMap && (
-            <div className="mt-1 overflow-hidden rounded-lg shadow">
+            <div className="mt-2 overflow-hidden rounded-lg shadow">
               <MapContainer
                 center={[21.5, 95]}
                 zoom={6}
