@@ -1,0 +1,548 @@
+[
+  {
+    "id": "0",
+    "name": "The Fool",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_00_Fool.jpg",
+    "upright": "New beginnings, optimism, trust in life",
+    "reversed": "Recklessness, taken advantage of, inconsideration"
+  },
+  {
+    "id": "1",
+    "name": "The Magician",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/RWS_Tarot_01_Magician.jpg",
+    "upright": "Manifestation, resourcefulness, power",
+    "reversed": "Manipulation, poor planning, untapped talents"
+  },
+  {
+    "id": "2",
+    "name": "The High Priestess",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/RWS_Tarot_02_High_Priestess.jpg",
+    "upright": "Intuition, sacred knowledge, divine feminine",
+    "reversed": "Secrets, disconnected from intuition, withdrawal"
+  },
+  {
+    "id": "3",
+    "name": "The Empress",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg",
+    "upright": "Femininity, abundance, nature, nurturing",
+    "reversed": "Dependence, smothering, emptiness"
+  },
+  {
+    "id": "4",
+    "name": "The Emperor",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/RWS_Tarot_04_Emperor.jpg",
+    "upright": "Authority, structure, control, fatherhood",
+    "reversed": "Domination, rigidity, coldness"
+  },
+  {
+    "id": "5",
+    "name": "The Hierophant",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/RWS_Tarot_05_Hierophant.jpg",
+    "upright": "Tradition, spiritual wisdom, conformity",
+    "reversed": "Rebellion, personal belief, freedom"
+  },
+  {
+    "id": "6",
+    "name": "The Lovers",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_06_Lovers.jpg",
+    "upright": "Relationships, choices, harmony",
+    "reversed": "Imbalance, disharmony, poor choices"
+  },
+  {
+    "id": "7",
+    "name": "The Chariot",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg",
+    "upright": "Willpower, determination, success",
+    "reversed": "Lack of direction, obstacles, loss of control"
+  },
+  {
+    "id": "8",
+    "name": "Strength",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg",
+    "upright": "Courage, compassion, inner power",
+    "reversed": "Weakness, self-doubt, lack of control"
+  },
+  {
+    "id": "9",
+    "name": "The Hermit",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/RWS_Tarot_09_Hermit.jpg",
+    "upright": "Solitude, introspection, wisdom",
+    "reversed": "Loneliness, isolation, withdrawal"
+  },
+  {
+    "id": "10",
+    "name": "Wheel of Fortune",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/RWS_Tarot_10_Wheel_of_Fortune.jpg",
+    "upright": "Good luck, destiny, life cycles",
+    "reversed": "Bad luck, resistance to change, unforeseen events"
+  },
+  {
+    "id": "11",
+    "name": "Justice",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/RWS_Tarot_11_Justice.jpg",
+    "upright": "Fairness, truth, cause and effect",
+    "reversed": "Injustice, unfairness, evasion of responsibility"
+  },
+  {
+    "id": "12",
+    "name": "The Hanged Man",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/RWS_Tarot_12_Hanged_Man.jpg",
+    "upright": "Sacrifice, surrender, new perspective",
+    "reversed": "Stagnation, unwillingness to sacrifice, martyrdom"
+  },
+  {
+    "id": "13",
+    "name": "Death",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_13_Death.jpg",
+    "upright": "Endings, transformation, new beginnings",
+    "reversed": "Resistance to change, fear of endings, stagnation"
+  },
+  {
+    "id": "14",
+    "name": "Temperance",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/RWS_Tarot_14_Temperance.jpg",
+    "upright": "Balance, harmony, moderation",
+    "reversed": "Imbalance, excess, lack of harmony"
+  },
+  {
+    "id": "15",
+    "name": "The Devil",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/RWS_Tarot_15_Devil.jpg",
+    "upright": "Addiction, materialism, limitations",
+    "reversed": "Breaking free, reclaiming power, release"
+  },
+  {
+    "id": "16",
+    "name": "The Tower",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg",
+    "upright": "Sudden change, upheaval, revelation",
+    "reversed": "Resistance to change, disaster avoided, delaying the inevitable"
+  },
+  {
+    "id": "17",
+    "name": "The Star",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/RWS_Tarot_17_Star.jpg",
+    "upright": "Hope, inspiration, healing",
+    "reversed": "Lack of faith, despair, self-doubt"
+  },
+  {
+    "id": "18",
+    "name": "The Moon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/RWS_Tarot_18_Moon.jpg",
+    "upright": "Intuition, illusion, the subconscious",
+    "reversed": "Confusion, fear, repressed emotions"
+  },
+  {
+    "id": "19",
+    "name": "The Sun",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/RWS_Tarot_19_Sun.jpg",
+    "upright": "Joy, success, vitality",
+    "reversed": "Temporary sadness, lack of enthusiasm, blocked happiness"
+  },
+  {
+    "id": "20",
+    "name": "Judgment",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/RWS_Tarot_20_Judgement.jpg",
+    "upright": "Reflection, reckoning, inner calling",
+    "reversed": "Self-doubt, ignoring the call, fear of judgment"
+  },
+  {
+    "id": "21",
+    "name": "The World",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/RWS_Tarot_21_World.jpg",
+    "upright": "Completion, fulfillment, harmony",
+    "reversed": "Incompletion, delays, resistance to closure"
+  },
+  {
+    "id": "22",
+    "name": "Ace of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/RWS_Tarot_Ace_of_Wands.jpg",
+    "upright": "New ideas, inspiration, potential",
+    "reversed": "Lack of energy, delays, creative block"
+  },
+  {
+    "id": "23",
+    "name": "Two of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/RWS_Tarot_Two_of_Wands.jpg",
+    "upright": "Planning, decisions, progress",
+    "reversed": "Lack of planning, fear of the unknown, stagnation"
+  },
+  {
+    "id": "24",
+    "name": "Three of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/RWS_Tarot_Three_of_Wands.jpg",
+    "upright": "Expansion, foresight, opportunity",
+    "reversed": "Lack of foresight, delays, missed opportunities"
+  },
+  {
+    "id": "25",
+    "name": "Four of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/RWS_Tarot_Four_of_Wands.jpg",
+    "upright": "Celebration, harmony, home",
+    "reversed": "Lack of harmony, instability, feeling unwelcome"
+  },
+  {
+    "id": "26",
+    "name": "Five of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/RWS_Tarot_Five_of_Wands.jpg",
+    "upright": "Conflict, competition, disagreement",
+    "reversed": "Avoiding conflict, finding common ground, resolution"
+  },
+  {
+    "id": "27",
+    "name": "Six of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/RWS_Tarot_Six_of_Wands.jpg",
+    "upright": "Victory, recognition, confidence",
+    "reversed": "Lack of recognition, self-doubt, defeat"
+  },
+  {
+    "id": "28",
+    "name": "Seven of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/RWS_Tarot_Seven_of_Wands.jpg",
+    "upright": "Standing your ground, courage, defense",
+    "reversed": "Feeling overwhelmed, giving up, vulnerability"
+  },
+  {
+    "id": "29",
+    "name": "Eight of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/RWS_Tarot_Eight_of_Wands.jpg",
+    "upright": "Speed, action, swift change",
+    "reversed": "Delays, frustration, resistance to change"
+  },
+  {
+    "id": "30",
+    "name": "Nine of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/RWS_Tarot_Nine_of_Wands.jpg",
+    "upright": "Resilience, perseverance, boundaries",
+    "reversed": "Exhaustion, defensiveness, giving up"
+  },
+  {
+    "id": "31",
+    "name": "Ten of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/RWS_Tarot_Ten_of_Wands.jpg",
+    "upright": "Burden, responsibility, completion",
+    "reversed": "Inability to delegate, taking on too much, release"
+  },
+  {
+    "id": "32",
+    "name": "Page of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_Page_of_Wands.jpg",
+    "upright": "Inspiration, new ideas, enthusiasm",
+    "reversed": "Lack of direction, scattered energy, procrastination"
+  },
+  {
+    "id": "33",
+    "name": "Knight of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/RWS_Tarot_Knight_of_Wands.jpg",
+    "upright": "Adventure, passion, impulsiveness",
+    "reversed": "Recklessness, lack of direction, frustration"
+  },
+  {
+    "id": "34",
+    "name": "Queen of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/RWS_Tarot_Queen_of_Wands.jpg",
+    "upright": "Confidence, passion, independence",
+    "reversed": "Jealousy, insecurity, demanding"
+  },
+  {
+    "id": "35",
+    "name": "King of Wands",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/RWS_Tarot_King_of_Wands.jpg",
+    "upright": "Leadership, vision, creativity",
+    "reversed": "Impulsiveness, tyranny, lack of vision"
+  },
+  {
+    "id": "36",
+    "name": "Ace of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/RWS_Tarot_Ace_of_Cups.jpg",
+    "upright": "New love, emotional awakening, intuition",
+    "reversed": "Blocked emotions, loneliness, creative block"
+  },
+  {
+    "id": "37",
+    "name": "Two of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/RWS_Tarot_Two_of_Cups.jpg",
+    "upright": "Partnership, harmony, connection",
+    "reversed": "Disharmony, imbalance, broken communication"
+  },
+  {
+    "id": "38",
+    "name": "Three of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_Three_of_Cups.jpg",
+    "upright": "Celebration, friendship, community",
+    "reversed": "Overindulgence, lack of support, gossip"
+  },
+  {
+    "id": "39",
+    "name": "Four of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/RWS_Tarot_Four_of_Cups.jpg",
+    "upright": "Apathy, introspection, missed opportunities",
+    "reversed": "Engagement, new opportunities, acceptance"
+  },
+  {
+    "id": "40",
+    "name": "Five of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/RWS_Tarot_Five_of_Cups.jpg",
+    "upright": "Loss, grief, regret",
+    "reversed": "Acceptance, moving on, forgiveness"
+  },
+  {
+    "id": "41",
+    "name": "Six of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_Six_of_Cups.jpg",
+    "upright": "Nostalgia, sharing, harmony",
+    "reversed": "Clinging to the past, lack of generosity, feeling stuck"
+  },
+  {
+    "id": "42",
+    "name": "Seven of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/RWS_Tarot_Seven_of_Cups.jpg",
+    "upright": "Choices, illusions, wishful thinking",
+    "reversed": "Clarity, focus, realistic choices"
+  },
+  {
+    "id": "43",
+    "name": "Eight of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/RWS_Tarot_Eight_of_Cups.jpg",
+    "upright": "Walking away, searching for truth, abandonment",
+    "reversed": "Staying put, fear of change, avoidance"
+  },
+  {
+    "id": "44",
+    "name": "Nine of Cups",
+"image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_Nine_of_Cups.jpg",
+    "upright": "Wishes fulfilled, satisfaction, comfort",
+    "reversed": "Unhappiness, disappointment, lack of fulfillment"
+  },
+  {
+    "id": "45",
+    "name": "Ten of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/RWS_Tarot_Ten_of_Cups.jpg",
+    "upright": "Harmony, family, happiness",
+    "reversed": "Disharmony, broken family, lack of fulfillment"
+  },
+  {
+    "id": "46",
+    "name": "Page of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/RWS_Tarot_Page_of_Cups.jpg",
+    "upright": "Creativity, intuition, emotional messages",
+    "reversed": "Emotional immaturity, blocked creativity, sensitivity"
+  },
+  {
+    "id": "47",
+    "name": "Knight of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/RWS_Tarot_Knight_of_Cups.jpg",
+    "upright": "Romance, charm, following your heart",
+    "reversed": "Unrealistic expectations, moodiness, disappointment"
+  },
+  {
+    "id": "48",
+    "name": "Queen of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/RWS_Tarot_Queen_of_Cups.jpg",
+    "upright": "Compassion, emotional understanding, intuition",
+    "reversed": "Emotional instability, manipulation, self-pity"
+  },
+  {
+    "id": "49",
+    "name": "King of Cups",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/RWS_Tarot_King_of_Cups.jpg",
+    "upright": "Emotional maturity, balance, compassion",
+    "reversed": "Emotional repression, moodiness, manipulation"
+  },
+  {
+    "id": "50",
+    "name": "Ace of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/RWS_Tarot_Ace_of_Swords.jpg",
+    "upright": "Truth, clarity, new ideas",
+    "reversed": "Confusion, lack of clarity, mental block"
+  },
+  {
+    "id": "51",
+    "name": "Two of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/RWS_Tarot_Two_of_Swords.jpg",
+    "upright": "Difficult decisions, stalemate, avoidance",
+    "reversed": "Indecision, information overload, release of tension"
+  },
+  {
+    "id": "52",
+    "name": "Three of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/RWS_Tarot_Three_of_Swords.jpg",
+    "upright": "Heartbreak, sorrow, pain",
+    "reversed": "Healing, forgiveness, release of pain"
+  },
+  {
+    "id": "53",
+    "name": "Four of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/RWS_Tarot_Four_of_Swords.jpg",
+    "upright": "Rest, meditation, recuperation",
+    "reversed": "Burnout, restlessness, lack of self-care"
+  },
+  {
+    "id": "54",
+    "name": "Five of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/RWS_Tarot_Five_of_Swords.jpg",
+    "upright": "Conflict, defeat, betrayal",
+    "reversed": "Making amends, compromise, avoiding conflict"
+  },
+  {
+    "id": "55",
+    "name": "Six of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/RWS_Tarot_Six_of_Swords.jpg",
+    "upright": "Transition, moving on, acceptance",
+    "reversed": "Stuck in the past, resistance to change, feeling trapped"
+  },
+  {
+    "id": "56",
+    "name": "Seven of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/RWS_Tarot_Seven_of_Swords.jpg",
+    "upright": "Deception, trickery, strategy",
+    "reversed": "Confession, honesty, taking responsibility"
+  },
+  {
+    "id": "57",
+    "name": "Eight of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/RWS_Tarot_Eight_of_Swords.jpg",
+    "upright": "Feeling trapped, restriction, self-doubt",
+    "reversed": "Freedom, release, new perspectives"
+  },
+  {
+    "id": "58",
+    "name": "Nine of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/RWS_Tarot_Nine_of_Swords.jpg",
+    "upright": "Anxiety, worry, nightmares",
+    "reversed": "Hope, relief, facing fears"
+  },
+  {
+    "id": "59",
+    "name": "Ten of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/RWS_Tarot_Ten_of_Swords.jpg",
+    "upright": "End of cycle, rock bottom, release",
+    "reversed": "Resistance to endings, near miss, burden lifted"
+  },
+  {
+    "id": "60",
+    "name": "Page of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/RWS_Tarot_Page_of_Swords.jpg",
+    "upright": "Curiosity, new ideas, communication",
+    "reversed": "Gossip, harsh words, intellectual immaturity"
+  },
+  {
+    "id": "61",
+    "name": "Knight of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/RWS_Tarot_Knight_of_Swords.jpg",
+    "upright": "Action, ambition, intellect",
+    "reversed": "Aggression, impulsivity, lack of direction"
+  },
+  {
+    "id": "62",
+    "name": "Queen of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/RWS_Tarot_Queen_of_Swords.jpg",
+    "upright": "Independence, clarity, sharp intellect",
+    "reversed": "Bitterness, manipulation, harsh judgment"
+  },
+  {
+    "id": "63",
+    "name": "King of Swords",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/RWS_Tarot_King_of_Swords.jpg",
+    "upright": "Authority, intellect, justice",
+    "reversed": "Tyranny, manipulation, abuse of power"
+  },
+  {
+    "id": "64",
+    "name": "Ace of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_Ace_of_Pentacles.jpg",
+    "upright": "New opportunities, prosperity, grounding",
+    "reversed": "Missed opportunities, lack of resources, insecurity"
+  },
+  {
+    "id": "65",
+    "name": "Two of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/RWS_Tarot_Two_of_Pentacles.jpg",
+    "upright": "Balance, adaptability, juggling priorities",
+    "reversed": "Imbalance, overwhelm, disorganization"
+  },
+  {
+    "id": "66",
+    "name": "Three of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/RWS_Tarot_Three_of_Pentacles.jpg",
+    "upright": "Collaboration, skill, craftsmanship",
+    "reversed": "Lack of teamwork, poor quality, lack of recognition"
+  },
+  {
+    "id": "67",
+    "name": "Four of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/RWS_Tarot_Four_of_Pentacles.jpg",
+    "upright": "Security, stability, possessiveness",
+    "reversed": "Greed, insecurity, loss of control"
+  },
+  {
+    "id": "68",
+    "name": "Five of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/RWS_Tarot_Five_of_Pentacles.jpg",
+    "upright": "Hardship, lack, isolation",
+    "reversed": "Recovery, support, new opportunities"
+  },
+  {
+    "id": "69",
+    "name": "Six of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/RWS_Tarot_Six_of_Pentacles.jpg",
+    "upright": "Generosity, charity, sharing wealth",
+    "reversed": "Selfishness, imbalance, feeling indebted"
+  },
+  {
+    "id": "70",
+    "name": "Seven of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/RWS_Tarot_Seven_of_Pentacles.jpg",
+    "upright": "Patience, long-term vision, investment",
+    "reversed": "Impatience, lack of reward, poor investment"
+  },
+  {
+    "id": "71",
+    "name": "Eight of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/RWS_Tarot_Eight_of_Pentacles.jpg",
+    "upright": "Dedication, skill development, hard work",
+    "reversed": "Lack of focus, poor work ethic, feeling uninspired"
+  },
+  {
+    "id": "72",
+    "name": "Nine of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/RWS_Tarot_Nine_of_Pentacles.jpg",
+    "upright": "Independence, self-sufficiency, abundance",
+    "reversed": "Dependence, insecurity, lack of self-worth"
+  },
+  {
+    "id": "73",
+    "name": "Ten of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/RWS_Tarot_Ten_of_Pentacles.jpg",
+    "upright": "Legacy, security, family wealth",
+    "reversed": "Instability, financial loss, lack of inheritance"
+  },
+  {
+    "id": "74",
+    "name": "Page of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_Page_of_Pentacles.jpg",
+    "upright": "Manifestation, practicality, new ventures",
+    "reversed": "Lack of direction, procrastination, missed opportunities"
+  },
+  {
+    "id": "75",
+    "name": "Knight of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/RWS_Tarot_Knight_of_Pentacles.jpg",
+    "upright": "Persistence, responsibility, routine",
+    "reversed": "Stagnation, boredom, lack of ambition"
+  },
+  {
+    "id": "76",
+    "name": "Queen of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/RWS_Tarot_Queen_of_Pentacles.jpg",
+    "upright": "Nurturing, practicality, comfort",
+    "reversed": "Neglect, insecurity, over-indulgence"
+  },
+  {
+    "id": "77",
+    "name": "King of Pentacles",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/RWS_Tarot_King_of_Pentacles.jpg",
+    "upright": "Success, abundance, leadership",
+    "reversed": "Greed, materialism, lack of vision"
+  }
+]

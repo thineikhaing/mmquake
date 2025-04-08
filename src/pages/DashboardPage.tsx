@@ -4,6 +4,7 @@ import StatsOverview from "../components/Dashboard/StatsOverview";
 import EarthquakeMonitor from "../components/Dashboard/EarthquakeMonitor";
 import InfoGrid from "../components/Dashboard/InfoGrid";
 import FundraisingSection from "../components/Dashboard/FundraisingSection";
+// import TarotReading from "../components/TarotReading";
 const DashboardPage: React.FC = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const DashboardPage: React.FC = () => {
       <EarthquakeMonitor />
       <InfoGrid />
       <FundraisingSection />
+      {/* <TarotReading/> */}
 
     </>
   );
