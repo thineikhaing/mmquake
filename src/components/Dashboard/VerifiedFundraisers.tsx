@@ -98,7 +98,7 @@ const VerifiedFundraisers: React.FC = () => (
 
           <p className="text-sm text-gray-700">{f.description}</p>
 
-          {f.goal && f.raised !== undefined && (
+          {/* {f.goal && f.raised !== undefined && (
             <div className="text-xs text-gray-600 mt-1">
               <div className="w-full bg-gray-200 rounded-full h-2 mb-2 overflow-hidden">
                 <div
@@ -113,7 +113,7 @@ const VerifiedFundraisers: React.FC = () => (
                 {f.goal.toLocaleString()}
               </p>
             </div>
-          )}
+          )} */}
           <a
             href={f.link}
             target="_blank"

@@ -15,14 +15,14 @@ const stats: Stat[] = [
   {
     title: 'Deaths',
     mmTitle: 'သေဆုံး',
-    value: 4335,
+    value: 4346,
     color: 'bg-red-600',
     icon: <AlertTriangle size={24} />,
   },
   {
     title: 'Injuries',
     mmTitle: 'ဒဏ်ရာရ',
-    value: 6588,
+    value: 7830,
     color: 'bg-yellow-500',
     icon: <HeartPulse size={24} />,
   },
@@ -45,7 +45,7 @@ const stats: Stat[] = [
 const StatsOverview: React.FC = () => (
   <>
     <div className="flex justify-between items-center mb-2">
-      <h1 className="text-sm text-gray-500">Last updated: 8/1/2025</h1>
+      <h1 className="text-sm text-gray-500">Last updated: 9/1/2025 မြန်မာစံတော်ချိန် ညနေ ၅ နာရီထိ</h1>
     </div>
 
     <div className="grid grid-cols-4 gap-2">
@@ -67,8 +67,12 @@ const StatsOverview: React.FC = () => (
         </div>
       ))}
     </div>
+    <p className="text-sm rtl:text-left text-gray-500 dark:text-gray-400">
+    Source : NUG, SAC Announcements, trustworthy news media and on the-ground information.
+    </p>
 
-    <p className="bg-yellow-50 border border-yellow-200 p-4 rounded mt-6 text-sm text-gray-700 leading-relaxed">
+
+    {/* <p className="bg-yellow-50 border border-yellow-200 p-4 rounded mt-6 text-sm text-gray-700 leading-relaxed">
       ဒီအရေအတွက်ဟာ လက်လှမ်းမီသလောက် ရရှိထားတဲ့ ကိန်းဂဏန်းတွေသာဖြစ်ပြီး၊ မြေပြင်မှာ ကယ်ဆယ်ရေးလုပ်ငန်းတွေ လုပ်ဆောင်နေဆဲ အခြေအနေ ဖြစ်တာကြောင့်
       သေဆုံးသူဦးရေ <span className="text-red-600 font-semibold">ထပ်တိုးနိုင်ပါတယ်။</span><br />
       <span className="block mt-2">
@@ -83,7 +87,7 @@ const StatsOverview: React.FC = () => (
         </a>. As rescue operations are still ongoing on the ground, the number of casualties may
         <span className="text-red-600 font-semibold"> continue to rise</span>.
       </span>
-    </p>
+    </p> */}
   </>
 );
 
